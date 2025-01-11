@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-hover img {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr;
+}
+
+.card{
+    margin: 1rem;
+}
+
+.btn-primary{
+    color: brown !important;
+    background-color: bisque !important;
+    border: 2px solid red !important; /*dir important fach tkun ylin l element déja makhdum b bootstrap*/
+}
+
+h5{
+    font-size: 26px ;
+    font-weight: bolder ;
+}
+
+@media (max-width:1024px) {
+    h5{
+        color: brown ;
+    }
+    .container {
+        grid-template-columns: 100fr 100fr ;
+        grid-template-rows: 100fr 100fr ;
+    }
+}
+
+@media (max-width:600px) {
+    h5{
+        color: rgb(42, 75, 165) ;
+    }
+    .container {
+        grid-template-columns: 100fr ;
+        grid-template-rows: 100fr 100fr 100fr 100fr ;
+    }
+}
+
+@media (max-width:448px) {
+    h5{
+        color: rgb(153, 165, 42);
+    }
+}
